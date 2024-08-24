@@ -1,13 +1,10 @@
 ''' '''
-
 import os
 import csv
 import json
 import argparse
 import cv2
 import numpy as np
-
-
 from colorama import init, Fore
 
 
@@ -79,6 +76,7 @@ JSON_FILE_PATH = os.path.join(train_path, JSON_FILE)
 FULL_PATH = os.path.join(os.getcwd(), ROOT_DIR)
 MAPPING_DICT = { }
 CLASS_DIRS = os.listdir(FULL_PATH)
+
 
 i = 0
 for CLASS in CLASS_DIRS:
